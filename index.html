@@ -1,0 +1,727 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      Fastrans Logistics Limited | Seamless Logistics &amp; Supply Chain
+      Solutions Nigeria
+    </title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    /> 
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#263142",
+              "on-primary": "#ffffff",
+              "on-surface": "#111c2c",
+              surface: "#f9f9ff",
+              "inverse-primary": "#b6c5f9",
+              error: "#ba1a1a",
+              "on-primary-fixed": "#061944",
+              "primary-container": "#1b2b56",
+              "surface-container-high": "#dee8ff",
+              "inverse-on-surface": "#ebf1ff",
+              "surface-container-low": "#f0f3ff",
+              "on-tertiary-container": "#939596",
+              "on-tertiary-fixed": "#191c1d",
+              "surface-dim": "#cfdaf1",
+              "surface-container": "#e7eeff",
+              "tertiary-fixed": "#e1e3e4",
+              "on-secondary-fixed": "#410002",
+              "on-surface-variant": "#45464f",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              secondary: "#bb0014",
+              "primary-fixed": "#dbe1ff",
+              tertiary: "#17191a",
+              background: "#f9f9ff",
+              "surface-tint": "#4e5d8b",
+              "secondary-container": "#e41f25",
+              "outline-variant": "#c5c6d0",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#454748",
+              "on-primary-fixed-variant": "#364571",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-container": "#fffbff",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#b6c5f9",
+              "secondary-fixed-dim": "#ffb4ab",
+              "on-primary-container": "#8493c5",
+              "on-background": "#111c2c",
+              "tertiary-fixed-dim": "#c5c7c8",
+              "on-secondary-fixed-variant": "#93000d",
+              "surface-variant": "#d8e3fa",
+              "tertiary-container": "#2b2e2f",
+              "surface-bright": "#f9f9ff",
+              outline: "#757680",
+              "surface-container-highest": "#d8e3fa",
+              "secondary-fixed": "#ffdad6",
+              primary: "#031541",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "stack-sm": "0.5rem",
+              "section-padding": "5rem",
+              gutter: "1.5rem",
+              "stack-md": "1rem",
+              "stack-lg": "2.5rem",
+              "margin-mobile": "1rem",
+              "container-max": "1280px",
+            },
+            fontFamily: {
+              "display-lg": ["Manrope"],
+              "label-sm": ["JetBrains Mono"],
+              "headline-lg": ["Manrope"],
+              "headline-lg-mobile": ["Manrope"],
+              "headline-md": ["Manrope"],
+              "body-lg": ["Inter"],
+              "body-md": ["Inter"],
+            },
+            fontSize: {
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "700" },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "700" },
+              ],
+              "headline-md": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "600" },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .text-shadow-custom {
+        text-shadow: 0 2px 4px rgba(3, 21, 65, 0.3);
+      }
+      .hero-clip {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      }
+      @media (max-width: 768px) {
+        .hero-clip {
+          clip-path: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-background font-body-md">
+    <!-- Top Navigation Bar -->
+    <nav
+      class="bg-surface/95 dark:bg-primary/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-primary-container shadow-sm"
+    >
+      <div
+        class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            alt="FASTRANS LOGO"
+            class="h-10 object-contain"
+            src="/image/WhatsApp Image 2026-05-29 at 4.27.33 PM.jpeg"
+          />
+          <span
+            class="font-display-lg text-headline-md font-black tracking-tighter text-primary dark:text-on-primary"
+            >FASTRANS</span
+          >
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-200"
+            href="#services"
+            >Services</a
+          >
+          <a
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-200"
+            href="#about"
+            >Real Estate</a
+          >
+          <a
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-200"
+            href="#about"
+            >About Us</a
+          >
+          <a
+            class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-200"
+            href="#footer"
+            >Contact</a
+          >
+          <a href="https://wa.me/qr/ARF34N75PCGAP1"
+            ><button
+              class="bg-primary rounded-2xl text-on-primary px-6 py-2.5 font-bold hover:scale-95 transition-transform duration-200"
+            >
+              Message Us
+            </button></a
+          >
+        </div>
+        <button class="md:hidden text-primary">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <header
+      class="relative min-h-[921px] flex items-center overflow-hidden bg-primary hero-clip"
+    >
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"
+        ></div>
+        <img
+          class="w-full h-full object-cover object-center"
+          data-alt="A professional heavy-duty logistics van captured in a scenic high-contrast desert setting under a clear sky. The vehicle is positioned on a rugged dirt road with towering sandstone formations in the background. The lighting is warm and golden, reflecting a premium and adventurous brand identity. The composition is expansive, emphasizing reliability and nationwide reach in a modern corporate style."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT6LxYPSvtJ77ldxpOvCv-27-orBxCMhmZsAdvvH25oJASfAdSoRDLQH6uzlsGNSXlj2Rh_jHid0ffGIpG0qqy6yR6nvqNlAlLoovuy5HwzfZgMovA3cL1hdVOX8gBngQbakth7nwEkZFGT4Dqyvid140Y0HpTJKt3v5GnJyZ-F52gpyjuwT41ExqpHWXJhtcH7wT0XUxcVf8pxahmkBwU-dSsx17zyTe3Ro-MI5dEU1pPzCaR8fJXkGlDh_1IOZgMLasOVeRL0Ws"
+        />
+      </div>
+      <div
+        class="relative z-20 max-w-container-max mx-auto px-gutter w-full grid grid-cols-1 md:grid-cols-12 gap-gutter"
+      >
+        <div class="md:col-span-8 lg:col-span-7 space-y-stack-lg">
+          <div
+            class="inline-flex items-center gap-2 bg-secondary/10 border-l-4 border-secondary px-4 py-2"
+          >
+            <span
+              class="material-symbols-outlined text-secondary"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >local_shipping</span
+            >
+            <span
+              class="font-label-sm text-label-sm text-on-primary uppercase tracking-widest"
+              >Premium Logistics Nigeria</span
+            >
+          </div>
+          <h1
+            class="font-display-lg text-display-lg text-on-primary leading-tight"
+          >
+            Seamless
+            <span class="text-secondary border-b-4 border-secondary"
+              >Logistics</span
+            >
+            &amp; Supply Chain Solutions Across Nigeria.
+          </h1>
+          <p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl">
+            Reliable haulage, real estate management, and agro-allied services
+            tailored for your business needs. We bridge the gap with
+            institutional strength and operational efficiency.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button
+              class="bg-secondary text-on-primary px-8 py-4 font-bold text-lg hover:bg-on-secondary-fixed-variant transition-all shadow-lg active:scale-95"
+            >
+              Message Us
+            </button>
+            <button
+              class="bg-transparent border-2 border-on-primary text-on-primary px-8 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all active:scale-95"
+            >
+              Our Services
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+   
+    <section
+      class="py-section-padding px-gutter max-w-container-max mx-auto"
+      id="services"
+    >
+      <div class="text-center mb-16">
+        <h2 class="font-display-lg text-headline-lg text-primary mb-4">
+          Our Core Capabilities
+        </h2>
+        <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <!-- Logistics Card -->
+        <div
+          class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
+        >
+          <div class="h-48 overflow-hidden">
+            <img
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              data-alt="A matte olive green heavy-duty commercial van parked on a vast sandy beach at sunset. The soft, hazy light creates a serene yet powerful atmosphere, highlighting the vehicle's robust build. This image represents the company's versatile transportation capabilities and reliability in diverse terrains. The aesthetic is modern, professional, and high-end."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdijNY50eCI_aWXahlQV2VSwNYx-Hx1BXWeUQ1Yv54DWekRtAbkMKrHnX6OxHl0Vk9c8ynLuiksdFwQKR_CGYhmWmxzABEaCOp7tpvnggW9wPQN6PD2C-KQf04f2hiGI1RjpDFaLjP4l2CKJga0rlyEWZx8TWiyre0m-qJSH0hJfvjzHsJHZtL5mSfDzCWXqJkp8eq4-1fV1qgFDhMLPr2A5Olxa1Ti_WPRq-u6yNWg8GOicSq6VjJZKJoMNUoN49S3dmcZTMRAsc"
+            />
+          </div>
+          <div class="p-6 space-y-stack-md">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >delivery_truck_speed</span
+              >
+              <span
+                class="font-label-sm text-xs bg-surface-variant px-2 py-1 uppercase"
+                >Active Fleet</span
+              >
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">
+              Logistics &amp; Haulage
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Transportation of goods, agric products, and household equipment
+              across Nigeria with GPS tracking.
+            </p>
+          </div>
+        </div>
+        <!-- Real Estate Card -->
+        <div
+          class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
+        >
+          <div
+            class="h-48 overflow-hidden"
+          >
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/image/WhatsApp Image 2026-05-29 at 5.03.49 PM.jpeg" alt="real-estate">
+          </div>
+          <div class="p-6 space-y-stack-md">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >real_estate_agent</span
+              >
+              <span
+                class="font-label-sm text-xs bg-surface-variant px-2 py-1 uppercase"
+                >Property</span
+              >
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">
+              Real Estate
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Expert property management, valuation, development, and agency
+              services for residential and commercial assets.
+            </p>
+          </div>
+        </div>
+        <!-- Agro Card -->
+        <div
+          class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
+        >
+          <div
+            class="h-48 bg-surface-container flex items-center justify-center"
+          >
+            <img
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              data-alt="A dark gray professional logistics van driving on a narrow dirt path through a dense, lush evergreen forest. The lighting is moody and atmospheric, filtering through the tall trees to create a sense of determination and remote reach. The scene showcases the logistics company's commitment to delivering goods even to the most secluded agricultural areas of Nigeria."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL70bdG-PEfS_qM1Ayntvk5G8a82pYhRrte4ju69ILZK5j0RF00AIhZb5EpOrGn0kTQxu_RPocsgQrDmpDGx-FoAiiyFUkFvBc5C7YvJiO694-5WxgAkdsG6REBhBvwzOrG16U4BWhKtGRKL3L7vT7EVM-oUtc17TWLQUAmqfbMDjKPOr6ybpDgASsbYnzwwH2HqO_20lMrmpevGP_eFrpkRiHWyKmXzv2RLZ6EIOpV0w_4dCgL75YlUX-RD5GRroegA8MBWEMZpc"
+            />
+          </div>
+          <div class="p-6 space-y-stack-md">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >agriculture</span
+              >
+              <span
+                class="font-label-sm text-xs bg-surface-variant px-2 py-1 uppercase"
+                >Solutions</span
+              >
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">
+              Agro-Allied
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Strategic agricultural production and comprehensive farming
+              services to support Nigeria's food security.
+            </p>
+          </div>
+        </div>
+        <!-- General Merchant Card -->
+        <div
+          class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
+        >
+          <div class="h-48 bg-primary flex items-center justify-center">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/image/WhatsApp Image 2026-05-29 at 5.04.52 PM.jpeg" alt="merchant">
+            >
+          </div>
+          <div class="p-6 space-y-stack-md">
+            <div class="flex justify-between items-start">
+              <span class="material-symbols-outlined text-primary text-4xl"
+                >hub</span
+              >
+              <span
+                class="font-label-sm text-xs bg-surface-variant px-2 py-1 uppercase"
+                >Commerce</span
+              >
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary">
+              General Merchant
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Robust supply chain support, professional warehousing, and
+              streamlined distribution networks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us / Bento Grid Section -->
+    <section class="bg-surface-container-low py-section-padding">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-5 space-y-stack-md">
+            <h2 class="font-display-lg text-headline-lg text-primary">
+              Why Stakeholders <br />Partner With Fastrans
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              We combine institutional stability with modern technology to
+              deliver results that exceed expectations.
+            </p>
+            <ul class="space-y-4 pt-4">
+              <li class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >check_circle</span
+                >
+                <span class="font-body-md font-bold text-primary"
+                  >Nationwide Delivery Network</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >check_circle</span
+                >
+                <span class="font-body-md font-bold text-primary"
+                  >Real-Time Fleet Monitoring</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >check_circle</span
+                >
+                <span class="font-body-md font-bold text-primary"
+                  >Certified Property Valuations</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+            <div class="bg-primary text-on-primary p-8 space-y-2">
+              <span class="text-4xl font-black text-secondary-fixed">99%</span>
+              <p class="font-label-sm uppercase opacity-70">On-Time Delivery</p>
+            </div>
+            <div
+              class="bg-surface-container-lowest border border-outline-variant p-8 space-y-2"
+            >
+              <span class="text-4xl font-black text-primary">36+</span>
+              <p class="font-label-sm uppercase text-on-surface-variant">
+                States Covered
+              </p>
+            </div>
+            <div
+              class="bg-surface-container-lowest border border-outline-variant p-8 space-y-2"
+            >
+              <span class="text-4xl font-black text-primary">500+</span>
+              <p class="font-label-sm uppercase text-on-surface-variant">
+                Managed Properties
+              </p>
+            </div>
+            <div class="bg-secondary text-on-primary p-8 space-y-2">
+              <span class="text-4xl font-black">24/7</span>
+              <p class="font-label-sm uppercase opacity-80">
+                Support Availability
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section
+      class="py-section-padding px-gutter max-w-container-max mx-auto overflow-hidden"
+      id="about"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div
+            class="aspect-square bg-surface-variant absolute -top-8 -left-8 w-64 h-64 -z-10"
+          ></div>
+          <img
+            class="w-full h-auto border-8 border-surface-container shadow-2xl"
+            data-alt="A detailed close-up shot of a professional's hand on a modern Mercedes-Benz steering wheel. The interior is clean, sophisticated, and technologically advanced, reflecting the high standards of Fastrans Logistics. The monochrome color grading with subtle hints of corporate navy conveys professionalism, focus, and precision in every delivery."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuACMThgsUHHHXEmsXXPIUlm3mvRUuC-DNj60VKWsVBv5vh17K-KBq0Dn0nyy3Tsyz3ZOLC9wrKufhZqbCuT8GjMsqUYOUtfjucfGW0rvPPl2L7gkag78_SfHb4Wq5qwIMgXZO1tg8f-Ol_3ktME55Y998W39FQnc0F_WDIuU194jwbJyognygJy9KcegzcBp9Es3ONbDdCu5UBTgmrAchnrWU4dGpfQwHDDz7rkn4B1KKln5COKcDb9h4Yl_pSd81wzNN8BbUoPQXc"
+          />
+          <div
+            class="absolute -bottom-10 -right-10 bg-primary p-8 hidden md:block"
+          >
+            <p class="text-on-primary font-display-lg text-headline-md italic">
+              "Operational Excellence, <br />Nigeria-Wide."
+            </p>
+          </div>
+        </div>
+        <div class="space-y-stack-md">
+          <h3 class="font-label-sm text-secondary tracking-[0.2em] uppercase">
+            About Fastrans Logistics
+          </h3>
+          <h2 class="font-display-lg text-headline-lg text-primary">
+            Building a Legacy of Reliability
+          </h2>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+          >
+            Fastrans Logistics Limited is a multi-sector startup that has
+            rapidly grown into a powerhouse in the Nigerian logistics and real
+            estate landscape. Founded on the principles of speed and absolute
+            professionalism, we provide essential infrastructure services that
+            power businesses and individuals alike.
+          </p>
+          <div class="bg-surface-container p-6 border-l-4 border-primary">
+            <p
+              class="font-body-md font-bold text-primary mb-2 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined">location_on</span> OUR
+              HEADQUARTERS
+            </p>
+            <p class="font-body-md text-on-surface-variant">
+              SHOP 4, ELIBEL PLAZA, BESIDE UNCLED FILLING STATION, <br />
+              THURAYA, MOWE, OGUN STATE, NIGERIA.
+            </p>
+          </div>
+          <button
+            class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all group"
+          >
+            LEARN MORE ABOUT OUR JOURNEY
+            <span class="material-symbols-outlined">east</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio / Fleet Display -->
+    <section class="py-section-padding bg-inverse-surface">
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4"
+        >
+          <div class="space-y-2">
+            <h2 class="font-display-lg text-headline-lg text-on-primary">
+              Our Versatile Fleet
+            </h2>
+            <p class="text-surface-variant font-body-md">
+              From urban deliveries to rugged rural haulage, we have the right
+              equipment.
+            </p>
+          </div>
+          
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+          <div class="relative group h-[400px] overflow-hidden">
+            <img
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              data-alt="A clean white professional transit van parked in an open desert environment with unique red rock formations in the background. The van's side door is open, revealing a glimpse of an organized, well-maintained interior. This image highlights the company's commitment to vehicle maintenance, readiness, and its ability to operate across Nigeria's diverse geographic landscapes."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY-g2MoZUGkoywJfuJY2L2XfF_E0dBr_g4lmd8tDH848WBbAvZrg7Yyc3iNFyCvcZ5vmpl0IfvOQtGZEVhIzy7MpEiZfXSKIfZyGYf8c-wXVSXZvZ5zz7xwIu6GcGHvg_G3OI3GC2FjCWt78nl_vDu-8LU1BG4uBE0utvO-5oLOOGk-_J-EAw1_csm6P-il89i_eheUCYZQSsNjl4LoU4kEDvd0zvtRP7GrnnmOrcAQG01FalGmSkXPsImQm_ovZpkZoTsQjQ3cTU"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8"
+            >
+              <div class="text-on-primary">
+                <p class="font-label-sm text-secondary uppercase mb-1">
+                  Transit Excellence
+                </p>
+                <h4 class="text-headline-md font-bold">Premium Cargo Vans</h4>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-gutter">
+            <div
+              class="bg-primary-container p-10 h-full flex flex-col justify-center text-on-primary"
+            >
+              <span
+                class="material-symbols-outlined text-secondary text-5xl mb-4"
+                >handshake</span
+              >
+              <h3 class="text-headline-md font-bold mb-4">
+                Partner with Fastrans
+              </h3>
+              <p class="text-primary-fixed-dim mb-8">
+                Join our network of satisfied corporate clients and experience
+                the difference of professional management.
+              </p>
+              <a
+                class="inline-block border-b-2 border-secondary pb-1 font-bold hover:text-secondary transition-all"
+                href="https://wa.me/qr/ARF34N75PCGAP1"
+                >Inquire for Partnerships</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-inverse-surface dark:bg-tertiary-container border-t border-primary-container"
+      id="footer"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg py-section-padding px-gutter max-w-container-max mx-auto"
+      >
+        <div class="md:col-span-1 space-y-stack-md">
+          <div class="flex items-center gap-2 mb-4">
+            <span
+              class="font-display-lg text-headline-md font-extrabold text-on-primary"
+              >FASTRANS</span
+            >
+          </div>
+          <p class="font-body-md text-surface-variant">
+            Leading the way in Nigerian logistics, real estate, and agricultural
+            innovation.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="text-surface-variant hover:text-secondary-fixed transition-all"
+              href="mailto:fastranslogisticsltd@gmail.com"
+              ><span class="material-symbols-outlined">mail</span></a
+            >
+            <a
+              class="text-surface-variant hover:text-secondary-fixed transition-all"
+              href="tel:+2347031224870"
+              ><span class="material-symbols-outlined">call</span></a
+            >
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h4
+            class="font-label-sm uppercase text-secondary-fixed tracking-widest"
+          >
+            Our Services
+          </h4>
+          <ul class="space-y-2">
+            <li
+              class="font-body-md text-surface-variant dark:text-outline-variant"
+            >
+              Logistics &amp; Haulage >
+            </li>
+
+            <li
+              class="font-body-md text-surface-variant dark:text-outline-variant"
+            >
+              Property Management >
+            </li>
+            <li
+              class="font-body-md text-surface-variant dark:text-outline-variant"
+            >
+              Agricultural Solutions
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h4
+            class="font-label-sm uppercase text-secondary-fixed tracking-widest"
+          >
+            Second Office
+          </h4>
+          <p
+            class="font-body-md text-surface-variant dark:text-outline-variant"
+          >
+            Jibowu Park, Jibowu Lagos
+          </p>
+          <p
+            class="font-body-md text-surface-variant dark:text-outline-variant"
+          >
+            Email: fastranslogisticsltd@gmail.com
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h4
+            class="font-label-sm uppercase text-secondary-fixed tracking-widest"
+          >
+            Newsletter
+          </h4>
+          <p
+            class="font-body-md text-surface-variant dark:text-outline-variant mb-4"
+          >
+            Get logistics updates and market insights.
+          </p>
+          <div class="flex border-b border-outline-variant">
+            <input
+              class="bg-transparent border-none focus:ring-0 text-on-primary w-full py-2"
+              placeholder="Email Address"
+              type="email"
+            />
+            <button class="text-secondary-fixed">
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </div>
+        </div>
+      </div>
+        <p
+          class=" border-t border-primary-container/20 py-8 px-gutter max-w-container-max mx-auto font-body-md text-surface-variant dark:text-outline-variant text-sm flex align-center justify-center"
+        >
+          © 2024 Fastrans Logistics Limited. All rights reserved. Registered in
+          Nigeria.
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Micro-interactions and effects
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Simple button scaling interaction
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((btn) => {
+        btn.addEventListener("mousedown", () => btn.classList.add("scale-95"));
+        btn.addEventListener("mouseup", () => btn.classList.remove("scale-95"));
+        btn.addEventListener("mouseleave", () =>
+          btn.classList.remove("scale-95"),
+        );
+      });
+    </script>
+  </body>
+</html>
