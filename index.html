@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="scroll-smooth" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -155,10 +154,40 @@
           clip-path: none;
         }
       }
+      .mobile-menu {
+        animation: slideIn 0.3s ease-out forwards;
+      }
+      .mobile-menu.hidden {
+        animation: slideOut 0.3s ease-in forwards;
+        pointer-events: none;
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideOut {
+        from {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+      }
+      .hamburger-icon.active {
+        transform: rotate(90deg);
+      }
     </style>
   </head>
   <body class="bg-background text-on-background font-body-md">
-    <!-- Top Navigation Bar -->
+   
     <nav
       class="bg-surface/95 dark:bg-primary/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-primary-container shadow-sm"
     >
@@ -205,12 +234,36 @@
             </button></a
           >
         </div>
-        <button class="md:hidden text-primary">
-          <span class="material-symbols-outlined">menu</span>
+        <button id="hamburger-btn" class="md:hidden text-primary relative z-50">
+          <span class="material-symbols-outlined hamburger-icon">menu</span>
         </button>
       </div>
     </nav>
-    <!-- Hero Section -->
+
+    <div id="mobile-menu" class="mobile-menu hidden fixed inset-0 bg-surface/95 dark:bg-primary/95 z-40 pt-20 flex flex-col">
+      <div class="px-gutter py-4 space-y-4 flex-1">
+        <a href="#services" class="block font-body-md text-body-md text-on-surface dark:text-on-primary hover:text-primary dark:hover:text-secondary transition-colors duration-200 py-3 border-b border-outline-variant">
+          Services
+        </a>
+        <a href="#about" class="block font-body-md text-body-md text-on-surface dark:text-on-primary hover:text-primary dark:hover:text-secondary transition-colors duration-200 py-3 border-b border-outline-variant">
+          Real Estate
+        </a>
+        <a href="#about" class="block font-body-md text-body-md text-on-surface dark:text-on-primary hover:text-primary dark:hover:text-secondary transition-colors duration-200 py-3 border-b border-outline-variant">
+          About Us
+        </a>
+        <a href="#footer" class="block font-body-md text-body-md text-on-surface dark:text-on-primary hover:text-primary dark:hover:text-secondary transition-colors duration-200 py-3 border-b border-outline-variant">
+          Contact
+        </a>
+      </div>
+      <div class="px-gutter pb-8">
+        <a href="https://wa.me/qr/ARF34N75PCGAP1" class="block w-full">
+          <button class="w-full bg-primary dark:bg-secondary rounded-2xl text-on-primary dark:text-inverse-on-surface px-6 py-3 font-bold hover:scale-95 transition-transform duration-200">
+            Message Us
+          </button>
+        </a>
+      </div>
+    </div>
+
     <header
       class="relative min-h-[921px] flex items-center overflow-hidden bg-primary hero-clip"
     >
@@ -250,7 +303,7 @@
             >
             &amp; Supply Chain Solutions Across Nigeria.
           </h1>
-          <p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl">
+          <p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl text-orange">
             Reliable haulage, real estate management, and agro-allied services
             tailored for your business needs. We bridge the gap with
             institutional strength and operational efficiency.
@@ -288,7 +341,7 @@
         <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-        <!-- Logistics Card -->
+      
         <div
           class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
         >
@@ -318,7 +371,7 @@
             </p>
           </div>
         </div>
-        <!-- Real Estate Card -->
+    
         <div
           class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
         >
@@ -346,7 +399,7 @@
             </p>
           </div>
         </div>
-        <!-- Agro Card -->
+      
         <div
           class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
         >
@@ -378,7 +431,7 @@
             </p>
           </div>
         </div>
-        <!-- General Merchant Card -->
+       
         <div
           class="bg-surface-container-lowest border border-outline-variant hover:border-primary transition-all group overflow-hidden rounded-2xl"
         >
@@ -407,7 +460,7 @@
         </div>
       </div>
     </section>
-    <!-- Why Choose Us / Bento Grid Section -->
+   
     <section class="bg-surface-container-low py-section-padding">
       <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
@@ -460,7 +513,7 @@
             <div
               class="bg-surface-container-lowest border border-outline-variant p-8 space-y-2"
             >
-              <span class="text-4xl font-black text-primary">36+</span>
+              <span class="text-4xl font-black text-primary">20+</span>
               <p class="font-label-sm uppercase text-on-surface-variant">
                 States Covered
               </p>
@@ -468,7 +521,7 @@
             <div
               class="bg-surface-container-lowest border border-outline-variant p-8 space-y-2"
             >
-              <span class="text-4xl font-black text-primary">500+</span>
+              <span class="text-4xl font-black text-primary">200+</span>
               <p class="font-label-sm uppercase text-on-surface-variant">
                 Managed Properties
               </p>
@@ -483,7 +536,7 @@
         </div>
       </div>
     </section>
-    <!-- About Section -->
+   
     <section
       class="py-section-padding px-gutter max-w-container-max mx-auto overflow-hidden"
       id="about"
@@ -543,7 +596,7 @@
         </div>
       </div>
     </section>
-    <!-- Portfolio / Fleet Display -->
+   
     <section class="py-section-padding bg-inverse-surface">
       <div class="max-w-container-max mx-auto px-gutter">
         <div
@@ -603,7 +656,7 @@
         </div>
       </div>
     </section>
-    <!-- Footer -->
+   
     <footer
       class="bg-inverse-surface dark:bg-tertiary-container border-t border-primary-container"
       id="footer"
@@ -709,7 +762,26 @@
       </div>
     </footer>
     <script>
-      // Micro-interactions and effects
+   
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.querySelector('.hamburger-icon');
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+
+      hamburgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('active');
+      });
+
+  
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('active');
+        });
+      });
+
+   
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -719,7 +791,7 @@
         });
       });
 
-      // Simple button scaling interaction
+   
       const buttons = document.querySelectorAll("button");
       buttons.forEach((btn) => {
         btn.addEventListener("mousedown", () => btn.classList.add("scale-95"));
